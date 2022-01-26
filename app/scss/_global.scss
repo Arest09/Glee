@@ -1,5 +1,13 @@
 body{
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
+    @extend %dmsans-400;
+}
+
+main{
+    flex-grow: 1;
+   
 }
 .container{
     margin: 0 auto;

@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'lib';
 @import 'global';
 
 
@@ -41,6 +42,7 @@
 }
 
 .user-nav {
+    padding-right: 15px;
     display: flex;
     align-items: flex-end;
 
@@ -49,7 +51,7 @@
         position: relative;
     }
 
-    &__link:last-child{
+    &__link:last-child {
         margin-right: 0;
     }
 
@@ -170,6 +172,7 @@
 
     &__text {
         margin-bottom: 45px;
+        padding-left: 10px;
     }
 
     &__text p {
@@ -181,15 +184,16 @@
     }
 
     &__button {
+        margin-left: 10px;
         text-align: left;
         padding-left: 25px;
         line-height: 60px;
         color: #ffffff;
         width: 200px;
         height: 60px;
-        background-color: #a3bbc8;
+        background-color: $btn-color;
         position: relative;
-        border: none;
+        @extend %rubik-500
     }
 
     &__button::after {
@@ -212,33 +216,33 @@
 
     li {
         margin-right: 12px;
-    }
 
-    button {
-        width: 30px;
-        height: 29px;
-        background-color: #fde3cc;
-        border-radius: 50%;
-        border: 0;
-    }
+        button {
+            width: 30px;
+            height: 29px;
+            background-color: #fde3cc;
+            border-radius: 50%;
+            border: 0;
+        }
 
-    .slick-active button {
-        background-color: #fff;
+        &.slick-active button {
+            background-color: #fff;
+        }
     }
 }
 
 
 .info {
     background-color: #fef7f0;
-    padding-top: 35px;
-    padding-bottom: 47px;
+    position: relative;
 
     &__items {
         display: flex;
         justify-content: space-around;
+        align-items: center;
 
         p {
-           @extend %dmsans-500;
+            @extend %dmsans-400;
             color: rgb(88, 88, 88);
             line-height: 1.875;
         }
@@ -248,6 +252,10 @@
 
     &__item {
         position: relative;
+        padding-top: 35px;
+        padding-bottom: 47px;
+        padding-right: 150px;
+        margin-left: 150px;
 
         .info__title {
             font-size: 18px;
@@ -261,17 +269,26 @@
         content: "";
         width: 50px;
         height: 50px;
-        top: 16px;
+        top: 50px;
         left: -77px;
         background-repeat: no-repeat;
         position: absolute;
     }
 
-    &__item--24::after {
+    &__item--24 {
+        border-right: 1px solid #e8e4df;
 
+    }
+
+    &__item--truck {
+        border-right: 1px solid #e8e4df;
+    }
+
+    &__item--24::after {
         background-image: url('../images/icons/24-icon.svg');
 
     }
+
 
     &__item--truck::after {
         background-image: url('../images/icons/truck-icon.svg');
@@ -283,7 +300,107 @@
 
 }
 
+.footer {
+    background-color: #fff;
+    @extend %rubik-400;
+    color: #7b7b7b;
 
+    &__container {
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    &__logo {
+        margin-bottom: 25px;
+    }
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 73px 0 70px;
+    border-bottom: 1px solid #dae4e9;
+
+    &__item {
+        max-width: 220px;
+    }
+
+    &__title {
+        color: #1f2044;
+        @extend %dmsans-800;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 32px;
+        margin-bottom: 35px;
+    }
+
+    &__adress {
+        display: block;
+        line-height: 24px;
+    }
+
+    &__tel {
+        display: block;
+        line-height: 32px;
+    }
+
+    &__email {
+        display: block;
+        line-height: 32px;
+    }
+
+    &__item-form {
+        max-width: 270px;
+    }
+
+    &__input-form {
+        background-color: $peach-color;
+        border: none;
+        padding: 14px 15px;
+        max-width: 155px;
+
+        &::placeholder {
+            color: #234969;
+            @extend %dmsans-400;
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: $btn-color;
+        padding: 14px 16px;
+        color: #fff;
+    }
+}
+
+.footer-bottom {
+    padding: 36px 0 36px;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        display: flex;
+    }
+
+    &__list{
+        padding-right: 12px;
+        margin-right: 20px;
+        border-right: 1px solid #7b7b7b;
+
+        &:last-child{
+            border: none;
+            margin: 0;
+        }
+    }
+}
 
 
 @import'media';
