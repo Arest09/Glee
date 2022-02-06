@@ -3,28 +3,29 @@ $header-color:#436372;
 $deafault-color:#8b8b8b;
 $btn-color:#a3bbc8;
 $peach-color:#feefe2;
-%dmsans-800{
-    font-family: 'DMSans-Bold',sans-serif;
+
+%dmsans-800 {
+    font-family: 'DMSans-Bold', sans-serif;
     font-weight: 700;
 }
 
-%dmsans-500{
-    font-family: 'DMSans-Medium',sans-serif;
+%dmsans-500 {
+    font-family: 'DMSans-Medium', sans-serif;
     font-weight: 500;
 }
 
-%dmsans-400{
-    font-family: 'DMSans-Regular',sans-serif;
+%dmsans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
     font-weight: 400;
 }
 
-%rubik-500{
-    font-family: 'Rubik-Medium',sans-serif;
+%rubik-500 {
+    font-family: 'Rubik-Medium', sans-serif;
     font-weight: 500;
 }
 
-%rubik-400{
-    font-family: 'Rubik-Regular',sans-serif;
+%rubik-400 {
+    font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
 }
 
@@ -32,3 +33,10 @@ $peach-color:#feefe2;
 
 
 
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
