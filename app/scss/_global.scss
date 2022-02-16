@@ -1,25 +1,58 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     @extend %dmsans-400;
 }
 
-main{
+main {
     flex-grow: 1;
-   
+
 }
-.container{
+
+.container {
     margin: 0 auto;
-    max-width:1830px ;
+    max-width: 1890px;
     padding: 0 60px;
 }
 
-.container-less{
+.container-less {
     max-width: 1170px;
     padding: 0;
 }
 
 
+.title {
+    font-size: 36px;
+    @extend %dmsans-800;
+    color: $title-color;
+    line-height: 1.2;
+    text-align: center;
+}
 
 
+  
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    color: $deafault-color;
+    @extend %dmsans-800;
+    font-size: 16px;
+
+    &__item {
+        margin-right: 20px;
+        transition: color 0.3s;
+        color: #8b8b8b;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__item:hover {
+        color: $title-color;
+    }
+
+    &__item:last-child {
+        margin: 0;
+    }
+}

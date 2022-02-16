@@ -29,8 +29,16 @@ $peach-color:#feefe2;
     font-weight: 400;
 }
 
+%myriadpro-regular {
+    font-family: 'myriadpro-regular';
+    font-weight: 400;
 
+}
 
+%Poppins-Bold {
+    font-family: 'Poppins-Bold';
+    font-weight: 700;
+}
 
 
 @function max($numbers...) {
