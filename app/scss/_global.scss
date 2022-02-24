@@ -31,7 +31,7 @@ main {
 }
 
 
-  
+
 
 .buttons {
     display: flex;
@@ -54,5 +54,26 @@ main {
 
     &__item:last-child {
         margin: 0;
+    }
+}
+  
+.breadcrumbs {
+    font-size: 14px;
+    @extend %rubik-400 ;
+    color: rgba(34, 41, 51, 0.6);
+    &__items {
+        display: flex;
+        justify-content: center;
+    }
+    &__list:first-child{
+        padding-right: 18px;
+        position: relative;
+    }
+
+    &__list:first-child::after{
+        content: "/";
+        position: absolute;
+        top: 0;
+        right: 6px;
     }
 }

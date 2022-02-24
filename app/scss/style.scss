@@ -429,6 +429,7 @@
 
 .design {
     padding-bottom: 140px;
+
     &__top {
         padding: 0 0 90px;
         display: flex;
@@ -450,7 +451,7 @@
         position: relative;
     }
 
-    &__top-item:last-child{
+    &__top-item:last-child {
         margin: 0;
     }
 
@@ -551,6 +552,168 @@
 
     &__type {
         color: rgb(163, 187, 200);
+    }
+}
+
+/* login-page */
+.top {
+    text-align: center;
+    padding: 35px 0 25px;
+    background-color: #edf1f4;
+
+    &__title {
+        font-size: 36px;
+        color: rgb(34, 41, 51);
+        margin-bottom: 5px;
+        @extend %Rubik-light;
+    }
+}
+
+
+.registr {
+    padding: 120px 0 116px;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #436372;
+    @extend %rubik-400;
+
+    &__wrapper {
+        border-bottom: 2px solid #f6f6f6;
+        margin-bottom: 30px;
+    }
+
+
+    &__label {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__label:last-child {
+        margin: 0;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 16px 10px 16px;
+        border: 2px solid rgb(246, 246, 246);
+        margin-top: 10px;
+    }
+
+
+    &__button,&__account {
+        border: none;
+        display: block;
+        width: 100%;
+        padding: 23px 0 23px;
+        margin-bottom: 30px;
+        background-color: $btn-color;
+        @extend %rubik-500;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__problem {
+        display: block;
+        margin-bottom: 25px;
+       
+    }
+
+    &__account{
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        border: 2px solid rgb(163, 187, 200);
+        color:#243f4d;
+    }
+}
+
+  
+
+/* footer */
+.footer {
+    background-color: #fff;
+    @extend %rubik-400;
+    color: #7b7b7b;
+}
+
+
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 73px 0 35px;
+    border-bottom: 1px solid #dae4e9;
+
+    &__item {
+        max-width: 220px;
+    }
+
+    &__item:first-child {
+        transform: translateY(-10px);
+    }
+
+    &__title {
+        color: #1f2044;
+        @extend %dmsans-800;
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 2.2;
+        margin-bottom: 35px;
+    }
+
+    &__adress {
+        display: block;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+
+    &__tel {
+        display: block;
+        font-size: 14px;
+        line-height: 2.3;
+    }
+
+    &__email {
+        display: block;
+        font-size: 14px;
+        line-height: 2.3;
+    }
+
+    &__item-form {
+        max-width: 270px;
+    }
+
+    &__input-form {
+        background-color: $peach-color;
+        border: none;
+        padding: 14px 15px;
+        max-width: 155px;
+
+        &::placeholder {
+            color: #234969;
+            @extend %dmsans-400;
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: $btn-color;
+        padding: 14px 16px;
+        color: #fff;
     }
 }
 
@@ -672,92 +835,8 @@
 
 }
 
-
-
-.footer {
-    background-color: #fff;
-    @extend %rubik-400;
-    color: #7b7b7b;
-
-
-
-    &__logo {
-        margin-bottom: 25px;
-    }
-}
-
-
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 73px 0 35px;
-    border-bottom: 1px solid #dae4e9;
-
-    &__item {
-        max-width: 220px;
-    }
-
-    &__item:first-child {
-        transform: translateY(-10px);
-    }
-
-    &__title {
-        color: #1f2044;
-        @extend %dmsans-800;
-        font-size: 16px;
-        line-height: 1.3;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-
-    &__text {
-        font-size: 14px;
-        line-height: 2.2;
-        margin-bottom: 35px;
-    }
-
-    &__adress {
-        display: block;
-        line-height: 1.7;
-        font-size: 14px;
-    }
-
-    &__tel {
-        display: block;
-        font-size: 14px;
-        line-height: 2.3;
-    }
-
-    &__email {
-        display: block;
-        font-size: 14px;
-        line-height: 2.3;
-    }
-
-    &__item-form {
-        max-width: 270px;
-    }
-
-    &__input-form {
-        background-color: $peach-color;
-        border: none;
-        padding: 14px 15px;
-        max-width: 155px;
-
-        &::placeholder {
-            color: #234969;
-            @extend %dmsans-400;
-            font-size: 14px;
-        }
-    }
-
-    &__btn {
-        border: none;
-        background-color: $btn-color;
-        padding: 14px 16px;
-        color: #fff;
-    }
+.partners-less{
+    padding: 43px 0 40px;
 }
 
 .footer-bottom {
@@ -780,7 +859,7 @@
         }
     }
 
-    &__copy{
+    &__copy {
         font-size: 14px;
     }
 }

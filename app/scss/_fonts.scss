@@ -71,3 +71,13 @@
         url('../fonts/Poppins-Bold.woff')format('woff'),
         url('../fonts/Poppins-Bold.woff2')format('woff2');    
 }
+
+@font-face {
+    font-family: 'Rubik-light';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: local('Poppins-Bold'), //если у пользователя шрифт находится на пк,то он скачает его с локал.
+        url('../fonts/Rubik-light.woff')format('woff'),
+        url('../fonts/Rubik-light.woff2')format('woff2');    
+}

@@ -40,6 +40,12 @@ $peach-color:#feefe2;
     font-weight: 700;
 }
 
+%Rubik-light{
+    font-family: 'Rubik-light';
+    font-weight: 300;
+}
+
+
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
