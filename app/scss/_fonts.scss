@@ -77,7 +77,17 @@
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-    src: local('Poppins-Bold'), //если у пользователя шрифт находится на пк,то он скачает его с локал.
+    src: local('Rubik-light'), //если у пользователя шрифт находится на пк,то он скачает его с локал.
         url('../fonts/Rubik-light.woff')format('woff'),
         url('../fonts/Rubik-light.woff2')format('woff2');    
+}
+
+@font-face {
+    font-family: 'Rubik-Bold';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local('Rubik-Bold'), //если у пользователя шрифт находится на пк,то он скачает его с локал.
+        url('../fonts/Rubik-Bold.woff')format('woff'),
+        url('../fonts/Rubik-Bold.woff2')format('woff2');    
 }

@@ -189,28 +189,6 @@
         margin: 0;
     }
 
-    &__button {
-        padding-left: 25px;
-        display: flex;
-        align-items: center;
-        color: #ffffff;
-        width: 200px;
-        height: 60px;
-        background-color: $btn-color;
-        position: relative;
-        @extend %rubik-500
-    }
-
-    &__button::after {
-        content: "";
-        position: absolute;
-        top: 25px;
-        right: 19px;
-        width: 22px;
-        height: 9px;
-        background-image: url('../images/arrow.png');
-    }
-
 }
 
 .slick-dots {
@@ -637,7 +615,7 @@
 /* terms-page */
 .terms {
 
-    
+
 
     padding: 120px 0 0px;
     color: rgb(36, 63, 77);
@@ -648,7 +626,8 @@
         padding: 0 60px;
     }
 
-    &__item , &__collect{
+    &__item,
+    &__collect {
         margin-bottom: 75px;
     }
 
@@ -659,10 +638,10 @@
         margin-bottom: 35px;
     }
 
-    &__wrapper{
+    &__wrapper {
         margin-left: 40px;
     }
-    
+
     &__info {
         margin-bottom: 30px;
         position: relative;
@@ -677,10 +656,245 @@
         top: 0;
     }
 
-    &__main{
+    &__main {
         margin-bottom: 23px;
     }
 }
+
+
+/* about-us-page */
+.about-us {
+    color: #243f4d;
+    padding: 120px 0 120px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 557px;
+    }
+
+    &__exp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 285px;
+    }
+
+    &__number {
+        font-size: 140px;
+        @extend %Rubik-bold;
+        color: $btn-color;
+    }
+
+    &__info-exp {
+        max-width: 100px;
+        @extend %rubik-400;
+    }
+
+
+    &__title {
+        margin-bottom: 33px;
+    }
+
+    &__text {
+        line-height: 1.875;
+        @extend %rubik-400;
+        padding-bottom: 60px;
+        border-bottom: 2px solid #e6eaf0;
+    }
+
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        max-width: 530px;
+        font-size: 36px;
+        @extend %dmsans-800;
+    }
+
+    &__list {
+        position: relative;
+        padding-left: 60px;
+        padding-right: 25px;
+        border-right: 1px solid #e6eaf0;
+        margin-top: 38px;
+    }
+
+    &__list:last-child {
+        border: none;
+    }
+
+    &__list::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+
+    &__list--project::after {
+        background-image: url('../images/icons/project.svg');
+        width: 37px;
+        height: 37px;
+    }
+
+    &__list--revenue::after {
+        background-image: url('../images/icons/revenue.svg');
+        width: 43px;
+        height: 40px;
+    }
+
+    &__list--awards::after {
+        background-image: url('../images/icons/award.svg');
+        width: 43px;
+        height: 40px;
+    }
+
+    &__awards-name {
+        font-size: 16px;
+        color: #4c4c4c;
+    }
+}
+
+.stats {
+    color: #243f4d;
+    background-color: #fcd7b6;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        max-width: 1065px;
+        padding: 90px 0 80px;
+        margin: 0 auto;
+        text-align: center;
+        @extend %dmsans-800;
+    }
+
+    &__img {
+        margin: 0 auto 25px;
+    }
+
+    &__num {
+        margin-bottom: 18px;
+        font-size: 36px;
+        position: relative;
+    }
+
+    &__num::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background-color: #a3bbc8;
+        bottom: 66px;
+        right: 36px;
+        width: 35px;
+        height: 35px;
+        opacity: 0.6;
+    }
+
+    &__info {
+        font-size: 18px;
+    }
+
+    &__item {
+        height: 150px;
+    }
+}
+
+.team {
+    padding: 125px 125px;
+    color: #243f4d;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 310px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        margin-bottom: 43px;
+
+    }
+
+    &__link {
+        font-size: 15px;
+        @extend %Poppins-Bold;
+        border-radius: 5px;
+        max-width: 170px;
+
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 90px;
+        grid-column-gap: 30px;
+    }
+
+    &__link::after {
+        background-image: url('../images/arrow-team.svg');
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 11px;
+        right: 20px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 27px 23px 27px;
+        background-color: #fff;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        position: absolute;
+        width: 100%;
+        max-width: 360px;
+        bottom: -50px;
+        left: -2px;
+    }
+
+    &__item-name {
+        color: #436372;
+        @extend %dmsans-800;
+        font-size: 22px;
+    }
+
+    &__item-position {
+        color: #565872;
+        @extend %rubik-400;
+    }
+
+    &__social-items {
+        display: flex;
+    }
+
+    &__social-item {
+        margin-right: 7px;
+    }
+
+    &__social-item:last-child {
+        margin: 0;
+    }
+
+}
+
+
 
 
 
@@ -767,10 +981,7 @@
 }
 
 
-/* .insights-terms{
-    max-width: 1200px;
-    margin: 0 auto;
-} */
+
 
 .insights {
     transform: translateY(195px);
