@@ -65,15 +65,22 @@ main {
         display: flex;
         justify-content: center;
     }
-    &__list:first-child{
+    &__list{
         padding-right: 18px;
         position: relative;
     }
 
-    &__list:first-child::after{
+    &__list::after{
         content: "/";
         position: absolute;
         top: 0;
         right: 6px;
+    }
+
+    &__list:last-child::after{
+        display: none;
+    }
+    &__list:last-child{
+        padding: 0;
     }
 }

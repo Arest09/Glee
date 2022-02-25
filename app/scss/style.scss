@@ -601,7 +601,8 @@
     }
 
 
-    &__button,&__account {
+    &__button,
+    &__account {
         border: none;
         display: block;
         width: 100%;
@@ -621,19 +622,68 @@
     &__problem {
         display: block;
         margin-bottom: 25px;
-       
+
     }
 
-    &__account{
+    &__account {
         display: block;
         width: 100%;
         background-color: #fff;
         border: 2px solid rgb(163, 187, 200);
-        color:#243f4d;
+        color: #243f4d;
     }
 }
 
-  
+/* terms-page */
+.terms {
+
+    
+
+    padding: 120px 0 0px;
+    color: rgb(36, 63, 77);
+
+    &__container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    &__item , &__collect{
+        margin-bottom: 75px;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 1.667;
+        @extend %rubik-500;
+        margin-bottom: 35px;
+    }
+
+    &__wrapper{
+        margin-left: 40px;
+    }
+    
+    &__info {
+        margin-bottom: 30px;
+        position: relative;
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 1.875;
+    }
+
+    &__count {
+        position: absolute;
+        left: -25px;
+        top: 0;
+    }
+
+    &__main{
+        margin-bottom: 23px;
+    }
+}
+
+
+
 
 /* footer */
 .footer {
@@ -641,7 +691,6 @@
     @extend %rubik-400;
     color: #7b7b7b;
 }
-
 
 
 .footer-top {
@@ -716,6 +765,12 @@
         color: #fff;
     }
 }
+
+
+/* .insights-terms{
+    max-width: 1200px;
+    margin: 0 auto;
+} */
 
 .insights {
     transform: translateY(195px);
@@ -835,7 +890,7 @@
 
 }
 
-.partners-less{
+.partners-less {
     padding: 43px 0 40px;
 }
 
