@@ -30,12 +30,12 @@ main {
     text-align: center;
 }
 
-.title-about{
+.title-about {
     font-size: 36px;
     color: rgb(36, 63, 77);
     line-height: 1.2;
     @extend %dmsans-800;
-      
+
 }
 
 
@@ -64,7 +64,7 @@ main {
     }
 }
 
-.button{
+.button {
     padding-left: 25px;
     display: flex;
     align-items: center;
@@ -89,28 +89,70 @@ main {
 
 .breadcrumbs {
     font-size: 14px;
-    @extend %rubik-400 ;
+    @extend %rubik-400;
     color: rgba(34, 41, 51, 0.6);
+
     &__items {
         display: flex;
         justify-content: center;
     }
-    &__list{
+
+    &__list {
         padding-right: 18px;
         position: relative;
     }
 
-    &__list::after{
+    &__list::after {
         content: "/";
         position: absolute;
         top: 0;
         right: 6px;
     }
 
-    &__list:last-child::after{
+    &__list:last-child::after {
         display: none;
     }
-    &__list:last-child{
+
+    &__list:last-child {
         padding: 0;
     }
+}
+
+.pagination {
+    @extend %rubik-400;
+    display: flex;
+    justify-content: center;
+    padding-top: 109px;
+
+    &__lists {
+        display: flex;
+    }
+
+    &__list {
+        padding: 14px 20px;
+        background-color: #ffffff;
+        margin-right: 20px;
+        transition: all 0.3s;
+        border: 1px solid $btn-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__list:hover {
+        background-color: $btn-color;
+    }
+    &__next:hover{
+        background-color: $btn-color;
+    }
+
+    &__next{
+        transition: all 0.3s;
+        align-self: center;
+        background-color: #ffffff;
+        border: 1px solid $btn-color;
+        padding: 18px 20px;
+    }
+
 }
