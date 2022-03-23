@@ -141,9 +141,6 @@
 
 
 
-.slick-slider {
-    height: 820px;
-}
 
 .slider {
     &__item {
@@ -223,6 +220,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: -30px;
 
         p {
             @extend %dmsans-400;
@@ -1257,25 +1255,7 @@
 
     }
 
-    &__title {
-        display: inline-block;
-        padding-right: 50px;
-        @extend %dmsans-800;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-        position: relative;
-    }
 
-    &__title::after {
-        content: "";
-        position: absolute;
-        width: 40px;
-        height: 2px;
-        background-color: #a3bbc8;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
 
 .shop-filter {
@@ -1440,6 +1420,453 @@
     &__title,
     .star {
         margin-bottom: 10px;
+    }
+}
+
+.product-page {
+    padding: 125px 0 0 0;
+}
+
+.product-one {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between
+    }
+}
+
+.product-slider {
+    display: flex;
+    width: 555px;
+    margin-right: 70px;
+
+    &__thumb {
+        width: 160px;
+        margin-right: 30px;
+
+    }
+
+    &__thumb-item {
+        width: 140px;
+        height: 160px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        border: 1px solid #f2f2f2;
+
+        img {
+            height: 160px;
+            object-fit: cover;
+        }
+    }
+
+    &__big {
+        width: 378px;
+        height: 575px;
+    }
+
+    &__big-item {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #f2f2f2;
+        justify-content: center;
+        width: 378px;
+        height: 528px;
+
+        img {
+            height: 409px;
+        }
+    }
+}
+
+.product-content {
+    @extend %rubik-400;
+    max-width: 535px;
+    color: #333333;
+
+    &__title {
+        font-size: 40px;
+    }
+
+    &__star {
+        padding: 20px 0 35px;
+    }
+
+    &__price {
+        font-size: 30px;
+        color: #333333;
+    }
+
+    &__text {
+        padding: 30px 0 30px;
+        color: #243f4d;
+        line-height: 1.8;
+    }
+
+    &__form {
+        max-width: 370px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    /* input-style */
+    .jq-number.product-content__input {
+        position: relative;
+        border: 1px solid $btn-color;
+    }
+
+
+
+    .jq-number__field input {
+        text-align: center;
+        line-height: 2;
+        width: 100%;
+        padding: 8px 9px;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 15px;
+        color: #333333;
+    }
+
+    .jq-number {
+        padding: 0 0 0 0;
+    }
+
+    .jq-number__spin {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+        height: 10px;
+        width: 10px;
+        height: 100%;
+        width: 48px;
+    }
+
+    .jq-number__spin::after {
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 1px;
+        top: 48%;
+        background-color: #333333;
+        right: 40%;
+    }
+
+    .jq-number__spin.minus {
+        left: 0;
+        border-right: 1px solid $btn-color;
+
+    }
+
+    .jq-number__spin.plus {
+        right: 0;
+        border-left: 1px solid $btn-color;
+    }
+
+    .jq-number__spin.plus::before {
+        content: '';
+        position: absolute;
+        height: 9px;
+        width: 1px;
+        background-color: #333333;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+    }
+
+    /* '' */
+
+    &__input {
+        max-width: 150px;
+    }
+
+    &__btn {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 17px 12px;
+        background-color: $btn-color;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+.product-info {
+    &__list {
+        display: flex;
+        color: #243f4d;
+    }
+
+    &__list+&__list {
+        margin-top: 16px;
+    }
+}
+
+.product-tabs {
+    &__top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+
+    &__item {
+        max-width: 240px;
+        flex-grow: 1;
+        text-align: center;
+        background-color: #edf1f4;
+        padding: 18px 15px;
+        border-radius: 5px;
+        font-size: 18px;
+        @extend %rubik-500;
+    }
+
+    &__item.product-tabs__item--active {
+        color: #fff;
+        background-color: $btn-color;
+    }
+
+    &__item+&__item {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    &__content-item.product-tabs__content-item--active {
+        display: block;
+    }
+
+    &__content-item {
+        display: none;
+        color: #243f4d;
+        @extend %rubik-400;
+        line-height: 1.8;
+    }
+}
+
+.related-product {
+    padding: 117px 0 0 0;
+
+    .slick-slider {
+
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            top: -85px;
+            right: 0;
+            z-index: 5;
+            border: none;
+            background: none;
+            width: 50px;
+            height: 50px;
+            border: 2px solid $btn-color;
+            border-radius: 5px;
+        }
+
+        .slick-prev {
+            right: 70px;
+        }
+
+        .slick-next {
+            right: 0;
+        }
+
+        .slick-disabled {
+            border-color: #edf1f4;
+        }
+    }
+
+    &__title {
+        color: #243f4d;
+        font-size: 36px;
+        @extend %dmsans-800;
+        margin-bottom: 70px;
+    }
+
+    width: 1260px;
+
+    .product__item {
+        max-width: 270px;
+        display: flex !important;
+        height: 383px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+}
+
+.blog-page {
+    padding: 120px 0 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 830px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    &__box {
+        display: flex;
+        width: 275px;
+        background-color: $btn-color;
+        padding: 30px 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff;
+        justify-content: space-between;
+        position: absolute;
+        top: 425px;
+    }
+
+    &__title {
+        padding: 40px 0;
+        text-align: left;
+        color: #333333;
+        @extend %rubik-400;
+    }
+
+    &__text {
+        color: #243f4d;
+        line-height: 1.8;
+        margin-bottom: 35px;
+    }
+
+    &__date,
+    &__author {
+        padding-left: 14px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 10px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__date::before {
+        background-image: url('../images/icons/calendar-days-solid.svg');
+    }
+
+    &__author::before {
+        background-image: url('../images/icons/user-solid.svg');
+    }
+
+    &__btn {
+        max-width: 180px;
+        background: none;
+        padding: 20px 60px 20px 20px;
+        width: 100%;
+        max-width: 180px;
+        border: 1px solid $btn-color;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 17px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url('../images/icons/arrow2.svg');
+            width: 22px;
+            height: 9px;
+        }
+    }
+
+    &__aside {
+        flex-grow: 1;
+        max-width: 270px;
+    }
+
+    &__form {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    .shop-filter__category {
+        margin-bottom: 45px;
+    }
+
+    &__input {
+        background-color: #fff;
+        height: 41px;
+        border: 1px solid #edf1f4;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    &__form-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        background-color: #edf1f4;
+        border-radius: 5px;
+        border: none;
+        transform: translateX(-10px);
+        cursor: pointer;
+    }
+
+
+    .pagination {
+        justify-content: flex-start;
+        padding-top: 76px;
+    }
+}
+
+.posts {
+    &__item {
+        @extend %rubik-400;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    &__item:last-child{
+        margin: 0;
+    }
+    img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    &__content{
+        max-width: 170px;
+    }
+
+    &__date{
+        font-size: 12px;
+        color:#9a9a9a;
+        padding-left: 20px;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url('../images/icons/calendar-days-solid-grey.svg');
+            width: 12px;
+            height: 11px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
 

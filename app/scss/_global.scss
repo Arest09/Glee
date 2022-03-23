@@ -143,11 +143,12 @@ main {
     &__list:hover {
         background-color: $btn-color;
     }
-    &__next:hover{
+
+    &__next:hover {
         background-color: $btn-color;
     }
 
-    &__next{
+    &__next {
         transition: all 0.3s;
         align-self: center;
         background-color: #ffffff;
@@ -155,4 +156,25 @@ main {
         padding: 18px 20px;
     }
 
+}
+
+.shop-title {
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 18px;
+    @extend %dmsans-800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.shop-title::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #a3bbc8;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
