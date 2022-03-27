@@ -2152,7 +2152,12 @@
         height: 13px;
     }
 
-    &__input--comment::after {
+    &__textarea--comment {
+        width: 100%;
+        position: relative;
+    }
+
+    &__textarea--comment::after {
         background-image: url('../images/icons/comment.svg');
         width: 18px;
         height: 13px;
@@ -2186,6 +2191,114 @@
         border: none;
         line-height: 0;
         cursor: pointer;
+    }
+}
+
+.contact {
+    padding: 120px 0 120px;
+
+    &__connection {
+        text-align: center;
+        margin-bottom: 118px;
+    }
+
+    &__write {
+        @extend %Poppins-Bold;
+        color: $btn-color;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        @extend %dmsans-800;
+        font-size: 35px;
+        color: #436372;
+        margin-bottom: 70px;
+    }
+
+    &__connection-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__connection-list {
+        max-width: 370px;
+        height: 375px;
+        background-color: #fbfbfb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    &__connection-list:hover {
+
+        .contact__box-img {
+            background-color: $btn-color;
+            transition: all 0.3s;
+        }
+
+        path {
+            transition: all 0.3s;
+            fill: #fff;
+        }
+    }
+
+    &__connection-list:nth-child(2),
+    &__connection-list:nth-child(3) {
+        .contact__connection-info {
+            max-width: 260px;
+        }
+    }
+
+    &__box-img {
+        height: 80px;
+        width: 80px;
+        background-color: #ffffff;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &__connection-name {
+        margin-bottom: 25px;
+        @extend %dmsans-800;
+        color: #222222;
+    }
+
+    &__connection-info {
+        max-width: 160px;
+        @extend %rubik-400;
+        color: #565872;
+        line-height: 1.8;
+    }
+
+    &__map-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form__connetion {
+        max-width: 615px;
+        width: 100%;
+    }
+
+    .blog-details__input {
+        max-width: 300px;
+    }
+
+    .blog-details__form-btn{
+        text-transform: uppercase;
+        border-radius: 15px;
+    }
+
+    #map {
+        width: 500px;
+        height: 335px;
     }
 }
 
