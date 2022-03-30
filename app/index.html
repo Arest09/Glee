@@ -19,6 +19,9 @@
                     <img src="./images/logo.png" class="logo__img" alt="логотип">
                 </div>
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
                     <ul class="menu__item">
                         <li class="menu__list">
                             <a href="#" class="menu__link">
@@ -53,33 +56,40 @@
                     </ul>
                 </nav>
                 <div class="user-nav">
-                    <a href="#" class="user-nav__link user-nav__link--round">
-                        <img class="user-nav__img " src="./images/icons/search-icon.svg" alt="лупа">
-                    </a>
-                    <a href="#" class="user-nav__link user-nav__link--peach">
-                        <div class="user-nav__item">
-                            <img class="user-nav__img user-nav__img--heart" src="./images/icons/heart-icon.svg"
-                                alt="сердце">
-                            <span class="user-nav__number">o</span>
-                        </div>
-                        <div class="user-nav__line"></div>
-                    </a>
-                    <a href="#" class="user-nav__link">
-                        <div class="user-nav__item">
-                            <img class="user-nav__img" src="./images/icons/basket-icon.svg" alt="корзина">
-                            <span class="user-nav__number">o</span>
-                        </div>
-                    </a>
-                    <a href="#" class="user-nav__link user-nav__link--blue">
-                        <img class="user-nav__img" src="./images/icons/dots-icon.svg" alt="дополнительно">
-                    </a>
+                    <div class="user-nav__box-inner">
+                        <a href="#" class="user-nav__link">
+                            <div class="user-nav__box">
+                                <img class="user-nav__img " src="./images/icons/search-icon.svg" alt="лупа">
+                            </div>
+                        </a>
+                        <a href="#" class="user-nav__link">
+                            <div class=" user-nav__box-middle">
+                                <div class="user-nav__box-item">
+                                    <div class="user-nav__box-img user-nav__box-img--line">
+                                        <img class="user-nav__img user-nav__img--heart"
+                                            src="./images/icons/heart-icon.svg" alt="лупа">
+                                            <span class="user-nav__num">0</span>
+                                    </div>
+                                    <div class="user-nav__box-img">
+                                        <img class="user-nav__img " src="./images/icons/basket-icon.svg" alt="лупа">
+                                        <span class="user-nav__num">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="user-nav__link">
+                            <div class="user-nav__box user-nav__box--end">
+                                <img class="user-nav__img " src="./images/icons/dots-icon.svg" alt="лупа">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <main>
+     <!-- <main>
         <section class="top-slider">
             <div class="container">
                 <div class="slider">
@@ -567,98 +577,99 @@
        
 
     </main>
-
-    <footer class="footer">
-        <div class="insights">
-            <div class="container container-less">
-                <div class="insights__inner">
-                    <div class="title insights__title">
-                        Our Insights & Articles
-                    </div>
-                    <a  class="insights__btn" href="#">
-                        View All
-                    </a>
-                </div>
-                <div class="insights__items">
-                    <div class="insights__item">
-                        <img src="images/insights/1.png" alt="interirer">
-                        <span class="insights__news">news</span>
-                        <div class="insights__block">
-                            <p class="insights__text">
-                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                            <div class="insights__info">
-                                <div class="insights__data">
-                                    28 january, 2020
-                                </div>
-                                <div class="insights__author">
-                                    by admin
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insights__item">
-                        <img src="images/insights/2.png" alt="interirer">
-                        <span class="insights__news">news</span>
-                        <div class="insights__block">
-                            <p class="insights__text">
-                                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            </p>
-                            <div class="insights__info">
-                                <div class="insights__data">
-                                    28 january, 2020
-                                </div>
-                                <div class="insights__author">
-                                    by admin
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insights__item">
-                        <img src="images/insights/3.png" alt="interirer">
-                        <span class="insights__news">news</span>
-                        <div class="insights__block">
-                            <p class="insights__text">
-                                Rncididunt ut labore et dolore magna aliqua. Ut enim
-                            </p>
-                            <div class="insights__info">
-                                <div class="insights__data">
-                                    28 january, 2020
-                                </div>
-                                <div class="insights__author">
-                                    by admin
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="partners">
-            <div class="container container-less">
-                <div class="partners__box">
-                    <ul class="partners__list">
-                        <li class="partners__item">
-                            <img class="partners__img" src="images/partners/logo 1.png" alt="">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__img" src="images/partners/logo 2.png" alt="">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__img" src="images/partners/logo 3.png" alt="">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__img" src="images/partners/logo 4.png" alt="">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__img" src="images/partners/logo 5.png" alt="">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div class="insights">
         <div class="container container-less">
+            <div class="insights__inner">
+                <div class="title insights__title">
+                    Our Insights & Articles
+                </div>
+                <a  class="insights__btn" href="#">
+                    View All
+                </a>
+            </div>
+            <div class="insights__items">
+                <div class="insights__item">
+                    <img src="images/insights/1.png" alt="interirer">
+                    <span class="insights__news">news</span>
+                    <div class="insights__block">
+                        <p class="insights__text">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <div class="insights__info">
+                            <div class="insights__data">
+                                28 january, 2020
+                            </div>
+                            <div class="insights__author">
+                                by admin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="insights__item">
+                    <img src="images/insights/2.png" alt="interirer">
+                    <span class="insights__news">news</span>
+                    <div class="insights__block">
+                        <p class="insights__text">
+                            Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        </p>
+                        <div class="insights__info">
+                            <div class="insights__data">
+                                28 january, 2020
+                            </div>
+                            <div class="insights__author">
+                                by admin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="insights__item">
+                    <img src="images/insights/3.png" alt="interirer">
+                    <span class="insights__news">news</span>
+                    <div class="insights__block">
+                        <p class="insights__text">
+                            Rncididunt ut labore et dolore magna aliqua. Ut enim
+                        </p>
+                        <div class="insights__info">
+                            <div class="insights__data">
+                                28 january, 2020
+                            </div>
+                            <div class="insights__author">
+                                by admin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <footer class="footer">
+       
+
+      
+        <div class="container container-less">
+            <div class="partners">
+                <div class="container container-less">
+                    <div class="partners__box">
+                        <ul class="partners__list">
+                            <li class="partners__item">
+                                <img class="partners__img" src="images/partners/logo 1.png" alt="">
+                            </li>
+                            <li class="partners__item">
+                                <img class="partners__img" src="images/partners/logo 2.png" alt="">
+                            </li>
+                            <li class="partners__item">
+                                <img class="partners__img" src="images/partners/logo 3.png" alt="">
+                            </li>
+                            <li class="partners__item">
+                                <img class="partners__img" src="images/partners/logo 4.png" alt="">
+                            </li>
+                            <li class="partners__item">
+                                <img class="partners__img" src="images/partners/logo 5.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="footer-top">
                 <div class="footer-top__item">
                     <div class="logo footer__logo">
@@ -787,7 +798,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
     <script src="js/main.min.js"></script>
 </body>
 

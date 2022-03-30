@@ -1,0 +1,146 @@
+@media(max-width:1100px) {
+
+    .menu {
+        order: 1;
+
+        &__item {
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            transform: translateY(-500%);
+            transition: all 0.3s;
+            top: 200px;
+            z-index: 5;
+            background-color: $peach-color;
+        }
+
+        &__item.menu__item--active {
+            transform: translateY(0%);
+        }
+
+        &__list {
+            margin: 0;
+            width: 70px;
+        }
+
+        &__link {
+            padding: 10px 0 10px;
+            display: block;
+        }
+
+        &__btn {
+            display: flex;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            background: none;
+            background-color: transparent;
+            border: none;
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: black;
+                top: 1px;
+            }
+
+            &::before {
+                background-color: black;
+                top: 13px;
+            }
+
+            span {
+                width: 100%;
+                height: 3px;
+                background-color: black;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:570px) {
+    .menu {
+        order: 0;
+    }
+}
+
+@media(max-width:320px) {
+
+    .menu {
+        &__item {
+            top: 320px;
+        }
+    }
+
+    .user-nav {
+        &__box-inner {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+/* ' ' */
+
+
+/* footer */
+@media(max-width:650px) {
+
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .partners {
+        &__list {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media(max-width:360px) {
+    .footer-top {
+        &__input-form {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__item-form {
+            max-width: 100%;
+        }
+
+        &__btn {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .partners {
+        &__list {
+
+            flex-direction: column;
+        }
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+
+        &__item {
+            flex-wrap: wrap;
+        }
+
+        &__list {
+            border: none;
+        }
+    }
+
+}
