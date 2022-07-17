@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Glee</title>
 
@@ -62,21 +61,21 @@
                                 <img class="user-nav__img " src="./images/icons/search-icon.svg" alt="лупа">
                             </div>
                         </a>
-                        <a href="#" class="user-nav__link">
+                        <div class="user-nav__link">
                             <div class=" user-nav__box-middle">
                                 <div class="user-nav__box-item">
-                                    <div class="user-nav__box-img user-nav__box-img--line">
+                                    <a href="#" class="user-nav__box-img user-nav__box-img--line">
                                         <img class="user-nav__img user-nav__img--heart"
                                             src="./images/icons/heart-icon.svg" alt="лупа">
-                                            <span class="user-nav__num">0</span>
-                                    </div>
-                                    <div class="user-nav__box-img">
+                                        <span class="user-nav__num">0</span>
+                                    </a>
+                                    <a href="#" class="user-nav__box-img">
                                         <img class="user-nav__img " src="./images/icons/basket-icon.svg" alt="лупа">
                                         <span class="user-nav__num">0</span>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <a href="#" class="user-nav__link">
                             <div class="user-nav__box user-nav__box--end">
                                 <img class="user-nav__img " src="./images/icons/dots-icon.svg" alt="лупа">
@@ -89,7 +88,7 @@
     </header>
 
 
-     <!-- <main>
+    <main>
         <section class="top-slider">
             <div class="container">
                 <div class="slider">
@@ -120,7 +119,7 @@
                                     <p>sed do eiusmod tempor incididunt </p>
                                 </div>
                             </div>
-                            <a class="slider__button">
+                            <a class="button slider__button">
                                 Shop Now
                             </a>
                         </div>
@@ -136,7 +135,7 @@
                                     <p>sed do eiusmod tempor incididunt </p>
                                 </div>
                             </div>
-                            <a class="slider__button">
+                            <a class="button slider__button">
                                 Shop Now
                             </a>
                         </div>
@@ -149,30 +148,45 @@
             <div class="container">
                 <div class="info">
                     <div class="info__items">
-                        <div class="info__item info__item--24 ">
-                            <div class="info__title">
-                                Support 24/7.
-                            </div>
-                            <div class="info__text">
-                                <p>Contact us 24 hours a day,</p>
-                                <p>7 days a week.</p>
-                            </div>
-                        </div>
-                        <div class="info__item info__item--truck">
-                            <div class="info__title">
-                                Delivery.
-                            </div>
-                            <div class="info__text">
-                                <p>Free shipping on all US order.</p>
+                        <div class="info__wrapper">
+                            <div class="info__inner">
+                                <img class="info__item-img info__item-img--24" src="./images/icons/24-icon.svg" alt="icon">
+                                <div class="info__item">
+                                    <div class="info__title">
+                                        Support 24/7.
+                                    </div>
+                                    <div class="info__text">
+                                        <p>Contact us 24 hours a day,</p>
+                                        <p>7 days a week.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="info__item info__item--credit">
-                            <div class="info__title">
-                                100% Payment secure.
+                        <div class="info__wrapper">
+                            <div class="info__inner">
+                                <img class="info__item-img info__item-img--truck" src="./images/icons/truck-icon.svg" alt="icon">
+                                <div class="info__item">
+                                    <div class="info__title">
+                                        Delivery.
+                                    </div>
+                                    <div class="info__text">
+                                        <p>Free shipping on all US order.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info__text">
-                                <p>We ensure secure payment</p>
-                                <p>with PEV.</p>
+                        </div>
+                        <div class="info__wrapper">
+                            <div class="info__inner">
+                                <img class="info__item-img info__item-img---credit" src="./images/icons/credit-icon.svg" alt="icon">
+                                <div class="info__item">
+                                    <div class="info__title">
+                                        100% Payment secure.
+                                    </div>
+                                    <div class="info__text">
+                                        <p>We ensure secure payment
+                                            with PEV.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -180,7 +194,7 @@
             </div>
         </section>
 
-        <section class="product">
+          <section class="product">
             <div class="container container-less">
                 <h1 class="title product__title">
                     Products of the week
@@ -427,10 +441,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
 
-        <section class="design">
+         <section class="design">
             <div class="container">
                 <div class="design__top">
                     <div class="design__top-item">
@@ -567,17 +581,17 @@
             </div>
             </div>
         </section>
-
+         
         <section class="video" style="background-image:url('./images/video.jpg')">
             <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
                 <img class="img__video" src="./images/icons/play-btn.svg" alt="video-button">
             </a>
-        </section>
+        </section> 
 
-       
+
 
     </main>
-    <div class="insights">
+     <div class="insights">
         <div class="container container-less">
             <div class="insights__inner">
                 <div class="title insights__title">
@@ -641,35 +655,34 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
     <footer class="footer">
-       
-
-      
-        <div class="container container-less">
-            <div class="partners">
-                <div class="container container-less">
-                    <div class="partners__box">
-                        <ul class="partners__list">
-                            <li class="partners__item">
-                                <img class="partners__img" src="images/partners/logo 1.png" alt="">
-                            </li>
-                            <li class="partners__item">
-                                <img class="partners__img" src="images/partners/logo 2.png" alt="">
-                            </li>
-                            <li class="partners__item">
-                                <img class="partners__img" src="images/partners/logo 3.png" alt="">
-                            </li>
-                            <li class="partners__item">
-                                <img class="partners__img" src="images/partners/logo 4.png" alt="">
-                            </li>
-                            <li class="partners__item">
-                                <img class="partners__img" src="images/partners/logo 5.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
+        <div class="partners">
+            <div class="container container-less">
+                <div class="partners__box">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/logo 1.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/logo 2.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/logo 3.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/logo 4.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/logo 5.png" alt="">
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
+
+        <div class="container container-less">
+
             <div class="footer-top">
                 <div class="footer-top__item">
                     <div class="logo footer__logo">
@@ -798,7 +811,7 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
     <script src="js/main.min.js"></script>
 </body>
 

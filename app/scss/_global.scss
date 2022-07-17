@@ -12,8 +12,8 @@ main {
 
 .container {
     margin: 0 auto;
-    max-width: 1890px;
-    padding: 0 60px;
+    max-width: 1800px;
+    padding: 0 15px;
 }
 
 .container-less {
@@ -42,6 +42,7 @@ main {
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: $deafault-color;
     @extend %dmsans-800;

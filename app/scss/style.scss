@@ -211,7 +211,7 @@
 
     &__items {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-top: -30px;
 
@@ -224,12 +224,48 @@
 
     }
 
+    &__wrapper {
+        max-width: 560px;
+        flex-grow: 1;
+        border-right: 1px solid #e8e4df;
+    }
+
+    &__wrapper:nth-child(3){
+        max-width: 600px;
+        .info__inner{
+            max-width: 300px;
+        }
+    }
+
+    &__wrapper:last-child{
+        border: none;
+    }
+
+    &__inner {
+        display: flex;
+        max-width: 277px;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;    
+        margin: 0 auto;
+    }
+    &__item-img--24{
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+    }
+
+    &__item-img--truck{
+        object-fit: cover;
+        width: 50px;
+        height: 30px;
+    }
+
     &__item {
         position: relative;
         padding-top: 35px;
         padding-bottom: 47px;
-        padding-right: 150px;
-        margin-left: 220px;
+        max-width: 205px;
 
         .info__title {
             font-size: 18px;
@@ -237,39 +273,6 @@
             color: rgb(65, 65, 65);
             @extend %dmsans-800;
         }
-    }
-
-    &__item::after {
-        content: "";
-        width: 50px;
-        height: 50px;
-        top: 50px;
-        left: -77px;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
-
-    &__item--24 {
-        border-right: 1px solid #e8e4df;
-
-    }
-
-    &__item--truck {
-        border-right: 1px solid #e8e4df;
-    }
-
-    &__item--24::after {
-        background-image: url('../images/icons/24-icon.svg');
-
-    }
-
-
-    &__item--truck::after {
-        background-image: url('../images/icons/truck-icon.svg');
-    }
-
-    &__item--credit::after {
-        background-image: url('../images/icons/credit-icon.svg');
     }
 
 }
@@ -757,6 +760,7 @@
 
     &__items {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
         max-width: 1065px;
@@ -1003,7 +1007,7 @@
         position: absolute;
         background-repeat: no-repeat;
         top: 4px;
-        left: 85px;
+        left: 70px;
         height: 14px;
         width: 12px;
         background-image: url('../images/icons/arrow-insight.svg');
@@ -1083,6 +1087,7 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         min-height: 170px;
@@ -1430,7 +1435,7 @@
 
 .product-slider {
     display: flex;
-    width: 555px;
+    max-width: 555px;
     margin-right: 70px;
 
     &__thumb {
@@ -1645,6 +1650,7 @@
 
 .related-product {
     padding: 117px 0 0 0;
+   max-width: 1260px;
 
     .slick-slider {
 
@@ -1682,7 +1688,7 @@
         margin-bottom: 70px;
     }
 
-    width: 1260px;
+    
 
     .product__item {
         max-width: 270px;
@@ -1702,7 +1708,7 @@
     }
 
     &__item {
-        width: 830px;
+        max-width: 830px;
         position: relative;
         margin-bottom: 50px;
     }

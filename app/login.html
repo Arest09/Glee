@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Glee</title>
 
@@ -19,6 +18,9 @@
                     <img src="./images/logo.png" class="logo__img" alt="логотип">
                 </div>
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
                     <ul class="menu__item">
                         <li class="menu__list">
                             <a href="#" class="menu__link">
@@ -53,26 +55,33 @@
                     </ul>
                 </nav>
                 <div class="user-nav">
-                    <a href="#" class="user-nav__link user-nav__link--round">
-                        <img class="user-nav__img " src="./images/icons/search-icon.svg" alt="лупа">
-                    </a>
-                    <a href="#" class="user-nav__link user-nav__link--peach">
-                        <div class="user-nav__item">
-                            <img class="user-nav__img user-nav__img--heart" src="./images/icons/heart-icon.svg"
-                                alt="сердце">
-                            <span class="user-nav__number">o</span>
+                    <div class="user-nav__box-inner">
+                        <a href="#" class="user-nav__link">
+                            <div class="user-nav__box">
+                                <img class="user-nav__img " src="./images/icons/search-icon.svg" alt="лупа">
+                            </div>
+                        </a>
+                        <div class="user-nav__link">
+                            <div class=" user-nav__box-middle">
+                                <div class="user-nav__box-item">
+                                    <a href="#" class="user-nav__box-img user-nav__box-img--line">
+                                        <img class="user-nav__img user-nav__img--heart"
+                                            src="./images/icons/heart-icon.svg" alt="лупа">
+                                        <span class="user-nav__num">0</span>
+                                    </a>
+                                    <a href="#" class="user-nav__box-img">
+                                        <img class="user-nav__img " src="./images/icons/basket-icon.svg" alt="лупа">
+                                        <span class="user-nav__num">0</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="user-nav__line"></div>
-                    </a>
-                    <a href="#" class="user-nav__link">
-                        <div class="user-nav__item">
-                            <img class="user-nav__img" src="./images/icons/basket-icon.svg" alt="корзина">
-                            <span class="user-nav__number">o</span>
-                        </div>
-                    </a>
-                    <a href="#" class="user-nav__link user-nav__link--blue">
-                        <img class="user-nav__img" src="./images/icons/dots-icon.svg" alt="дополнительно">
-                    </a>
+                        <a href="#" class="user-nav__link">
+                            <div class="user-nav__box user-nav__box--end">
+                                <img class="user-nav__img " src="./images/icons/dots-icon.svg" alt="лупа">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,33 +90,33 @@
 
     <main>
         <section class="top">
-<div class="container">
-            <div class="top__inner">
-                <h2 class="top__title">
-                    Log in
-                </h2>
-                <div class="breadcrumbs">
-                    <ul class="breadcrumbs__items">
-                        <li class="breadcrumbs__list">
-                            <a class="breadcrumbs__link" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li class="breadcrumbs__list">
-                            <a class="breadcrumbs__link" href="#">
-                                Log in
-                            </a>
-                        </li>
-                    </ul>
+            <div class="container">
+                <div class="top__inner">
+                    <h2 class="top__title">
+                        Log in
+                    </h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__list">
+                                <a class="breadcrumbs__link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__list">
+                                <a class="breadcrumbs__link" href="#">
+                                    Log in
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
         </section>
 
         <section class="registr">
 
-            
+
             <form class="registr__form" action="#">
                 <div class="registr__wrapper">
                     <label class="registr__label">
